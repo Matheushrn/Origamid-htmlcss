@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    font-size:20px;
+    color: #b2b2b2;
+    margin:20px;
+}
+
+.produto{
+    margin:20px;
+    text-align: left;
+}
+
+div{
+    margin:50px;
+    padding:10px;
+    border-radius:4px;
+    background-color: #111;
+    color:white;
+}
+
+.info{
+    color:#febe01;
+}
+
+p{
+    display:inline-block;
+    margin:20px;
+    padding:15px;
+    border:1px solid black;
+    border-radius:4px;
+    font-weight:550;
+    color:#111;
+    background-color:#febe01;
+}
