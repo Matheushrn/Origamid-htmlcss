@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:1fr 1fr ;
+            gap:10px;
+            justify-content: center;
+        }
+
+        h1, .teste{
+            text-align:center;
+        }
+
+        h2{
+            margin-top:0px;
+        }
+
+        .item{
+            display:grid;
+            background-color: #f7f7f7;
+            border: 1px solid #e7e7e7;
+            padding:20px;
+            border-radius:4px;
+        }
+
+        .comprar{
+            background:#a8f;
+            color:#103;
+            padding:10px 20px;
+            text-decoration:none;
+            border-radius:4px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Display Grid</h1>
+    <p>Com o Display Grid é possivel definir colunas e linhas para organizar os elemetnos que estiverem dentro do grid</p>
+
+    <h2>Propriedades</h2>
+    <ul>
+        <li>grid-template-columns</li>
+        <p>Define o total de colunas e o tamanho de cada uma</p>
+        <li>fr</li>
+        <p>unidade fracionária que tem o objetivo de distribuir o espaço restante entre os elementos do grid</p>
+        <li>gap</li>
+        <p>Cria uma distância entre os elementos do grid, tanto horizontal quanto vertical</p>
+    </ul>
+
+    <!-- Exercicio -->
+
+    <h2 class="teste">Teste</h2>
+
+    <h1>Comércio Eletrônico</h1>
+
+<div class="grid">
+    <div class="item">
+        <h2>Camisa Polo</h2>
+        <p class="preco">R$ 39</p>
+        <p>Camisa de algodão com detalhes em azul claro</p>
+        <a class="comprar" href="">Comprar</a>
+    </div>
+    <div class="item">
+        <h2>Bermuda</h2>
+        <p class="preco">R$ 39</p>
+        <p>Camisa de algodão com detalhes em azul claro</p>
+        <a class="comprar" href="">Comprar</a>
+    </div>
+    <div class="item">
+        <h2>Calça Jeans</h2>
+        <p class="preco">R$ 39</p>
+        <p>Camisa de algodão com detalhes em azul claro</p>
+        <a class="comprar" href="">Comprar</a>
+    </div>
+    <div class="item">
+        <h2>Casaco Azul</h2>
+        <p class="preco">R$ 39</p>
+        <p>Camisa de algodão com detalhes em azul claro</p>
+        <a class="comprar" href="">Comprar</a>
+    </div>
+</div>
+
+<h3>Dicas</h3>
+
+<p>Um dos problemas do Grid é a propriedade GAP que caso seja usada em % fica um pouco dificil de medir então o melhor é usar unidades fixas (px,em,rem e outras)</p>
+
+<p>e no  grid-template-columns o melhor é usar o FR pois ele vai distribuir de forma igual e muito mais facil de medir do que usando %</p>
+
+<h1>Align e Justify Content</h1>
+
+<h2>Propriedades</h2>
+    <ul>
+        <li>align-content</li>
+        <p>Alinha/Distribui o conteúdo na vertical</p>
+        <li>justify-content</li>
+        <p>Alinha/Distribui o conteúdo na horizontal</p>
+        <li>place-content</li>
+        <p>Atalho para align e justify</p>
+        <li>Valores</li>
+        <p>start | center | end | stretch | space-between | space-around | space-evenly</p>
+    </ul>
+
+<p>OBS: para alinhar ou justificar o conteúdo é preciso ter espaço sobrando</p>
+</body>
+</html>

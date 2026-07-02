@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top, Right, Bottom, Left</title>
+    <style>
+        span{
+            display: inline-block;
+            background-color: #ddd;
+        }
+
+        span{
+            padding:30px;
+            padding:20px 40px;
+            padding:40px 100px 200px 10px;
+            border:10px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Top,Right,Bottom,Left</h1>
+        <p>Quando são adicionadas as propriedades 
+
+            <b>Margin,Padding e Border</b>
+
+            automaticamente foram adicionados padding e margin para todos os cantos (lados) da caixa
+
+            mas é possivel controlar e escolher o tamanho que queremos
+        </p>
+
+        <h2>Sequencia</h2>
+        <p>Para colocar todos os lados em uma linha só é feito o seguinte</p>
+
+        <p> Div {
+            padding:20px 40px;
+            margin: 30px 100px 60px 200px
+        }
+
+        no jeito que está no margin seria 
+
+        Margin
+
+        30 Top
+        100 Right
+        60 Bottom
+        200 Left
+
+        Isso é sempre lido no sentido horário
+
+        agora quando se omite no caso do padding se le da seguinte forma 
+
+        Padding
+
+        20 Top/Bottom
+        40 Right/Left
+        </p>
+
+        <span>Teste</span>
+
+</body>
+</html>
