@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            margin:0px;
+        }
+
+        .flex{
+            display: flex;
+            /* conteudo vai para uma nova linha */
+            flex-wrap: wrap;
+            /* funciona como margin */
+            gap:20px;
+            /* centralizando conteudo na tela */
+            /* justify-content: center; */
+            /* align-content: center; */
+            
+            /* faz o que o justify e align fazem juntos */
+            place-content:center;
+            height:100vh;
+        }
+
+        h2{
+            background:#e7e7e7;
+            border:1px solid #d7d7d7;
+            padding:20px;
+            margin:0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+    <h2>Naruto</h2>
+    <h2>Jujutsu Kaisen</h2>
+    <h2>One Piece</h2>
+    <h2>Kuroko no Basket</h2>
+    <h2>Demon Slayer</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            margin:0px;
+        }
+
+        .flex{
+            display: flex;
+            /* conteudo vai para uma nova linha */
+            flex-wrap: wrap;
+            /* funciona como margin */
+            gap:20px;   
+        }
+
+        h2{
+            background:#e7e7e7;
+            border:1px solid #d7d7d7;
+            padding:20px;
+            margin:0px;
+            /* aumenta o conteudo, distribuindo o espaço em branco */
+            flex-grow: 1;
+            /* faz todos os itens flex ficarem de tamanhos iguais */
+            flex-basis: 0; 
+            /* determina se o elemento pode ser encolhido ou não */
+            flex-shrink:0;
+            /* atalho para as 3  propriedades*/
+            /* flex:1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+    <h2>Naruto</h2>
+    <h2>Jujutsu Kaisen</h2>
+    <h2>One Piece</h2>
+    <h2>Kuroko no Basket</h2>
+    <h2>Demon Slayer</h2>
+    </div>
+</body>
+</html>

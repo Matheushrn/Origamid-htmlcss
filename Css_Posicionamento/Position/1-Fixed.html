@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Fixed</title>
+    <style>
+        h1{
+            border:2px solid #ccc;
+            padding:20px 20px 200px 20px;
+        }
+
+        p{
+            background: #e7e7e7;
+            border:1px solid black;
+            padding:20px;
+            font-size:20px;
+            margin:0px;
+        }
+
+        .fixo{
+            /* deixa o conteudo fixado*/
+            position:fixed;
+            /* deixa o conteudo fixado no top */
+            /* top:0px; */
+            /* a esquerda */
+            left:20px;
+            /* a direita */
+            /* caso tenha LEFT e RIGHT o conteudo é esticado */
+            right:20px;
+            /* para baixo */
+            bottom:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro Conteúdo</h1>
+    <h1>Segundo Conteúdo</h1>
+    <h1>Terceiro Conteúdo</h1>
+    <div class="fixo">
+        <p>Neste site usamos cookies.</p>
+    </div>
+</body>
+</html>

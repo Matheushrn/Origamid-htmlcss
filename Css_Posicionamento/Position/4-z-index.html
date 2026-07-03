@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        h1{
+            margin:0px;
+            padding:10px;
+            background:lightblue;
+        }
+
+        .index1{
+            position:relative;
+            background: greenyellow;
+            top:30px;
+            /* pode mudar para deixar o elemento atrás ou na frente dos outros elementos 
+            
+            O z-index só funciona caso o elemento tenha position e o elemento com maior número fica na frente dos outros conteúdos
+            */
+            z-index:0;
+        }
+
+        .index2{
+            position:absolute;
+            background: lightcoral;
+            top:60px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Elemento 1</h1>
+    <h1 class="index1">Elemento 2</h1>
+    <h1>Elemento 3</h1>
+    <h1 class="index2">Elemento 4</h1>
+    <h1>Elemento 5</h1>
+   
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox vs Grid</title>
+    <style>
+        body{
+            margin:0px;
+        }
+
+        .flex{
+            display: flex;
+            /* conteudo vai para uma nova linha */
+            flex-wrap: wrap;
+            /* funciona como margin */
+            gap:20px;   
+        }
+
+        h2{
+            background:#e7e7e7;
+            border:1px solid #d7d7d7;
+            padding:20px;
+            margin:0px;
+        }
+
+        .grid{
+            margin-top:60px;
+            display:grid;
+            gap:20px;
+            /* AUTO-FIT - faz o grid encaixar quantos itens derem */
+            /* MINMAX - da um valor minimo e um maximo para o conteúdo */
+            grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+    <h2>Naruto</h2>
+    <h2>Jujutsu Kaisen</h2>
+    <h2>One Piece</h2>
+    <h2>Kuroko no Basket</h2>
+    <h2>Demon Slayer</h2>
+    </div>
+
+    <div class="grid">
+    <h2>Naruto</h2>
+    <h2>Jujutsu Kaisen</h2>
+    <h2>One Piece</h2>
+    <h2>Kuroko no Basket</h2>
+    <h2>Demon Slayer</h2>
+    </div>
+</body>
+</html>
