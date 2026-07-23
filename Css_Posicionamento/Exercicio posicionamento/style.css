@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+}
+
+.titulo{
+    width:100%;
+}
+
+.titulo, img{
+    text-align: center;
+    background-color: blue;
+}
+
+ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    gap:40px;
+    list-style-type:none;
+    background-color: yellow;
+}
+
+.conteudo{
+    background-color: chocolate;
+}
+
+.bicicleta{
+    max-width:450px;
+}
+
+footer{
+    background-color: chartreuse;
+    padding: 50px 0px;
+    margin:50px 0px;
+    text-align: center;
+}
